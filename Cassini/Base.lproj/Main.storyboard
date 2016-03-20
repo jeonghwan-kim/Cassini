@@ -105,20 +105,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6an-VR-dNe">
+                                <rect key="frame" x="20" y="28" width="560" height="544"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-Kx-eKd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6an-VR-dNe" firstAttribute="top" secondItem="jhG-wT-tkK" secondAttribute="bottom" constant="8" symbolic="YES" id="2jA-9O-u4p"/>
+                            <constraint firstItem="6an-VR-dNe" firstAttribute="centerY" secondItem="zc7-NW-LCa" secondAttribute="centerY" id="Lx6-5M-HgF"/>
                             <constraint firstItem="KJD-Kx-eKd" firstAttribute="leading" secondItem="zc7-NW-LCa" secondAttribute="leading" id="RUd-uS-OLu"/>
                             <constraint firstItem="KJD-Kx-eKd" firstAttribute="bottom" secondItem="gwN-pe-iew" secondAttribute="top" id="bZC-Fu-Jm8"/>
                             <constraint firstItem="KJD-Kx-eKd" firstAttribute="top" secondItem="zc7-NW-LCa" secondAttribute="top" id="cZa-cl-zQh"/>
+                            <constraint firstItem="6an-VR-dNe" firstAttribute="leading" secondItem="zc7-NW-LCa" secondAttribute="leading" constant="20" symbolic="YES" id="f06-f9-QC5"/>
                             <constraint firstAttribute="trailing" secondItem="KJD-Kx-eKd" secondAttribute="trailing" id="fPj-tn-Ri9"/>
+                            <constraint firstItem="6an-VR-dNe" firstAttribute="centerX" secondItem="zc7-NW-LCa" secondAttribute="centerX" id="sos-nq-ho5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="KJD-Kx-eKd" id="0a3-24-XgS"/>
+                        <outlet property="spinner" destination="6an-VR-dNe" id="pJP-j2-Wes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-wp-Wc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,6 +135,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Coc-j9-gTw"/>
+        <segue reference="cqD-Ja-9VP"/>
     </inferredMetricsTieBreakers>
 </document>
